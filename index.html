@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,24 @@
 
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+    }
     :root {
       --g : rgba(115, 149, 129, 0.342);
       --r : rgba(246, 189, 189, 0.267);
+      --b : rgba(186, 215, 245, 0.548);
+      --y : rgba(253, 231, 159, 0.363);
+      --gr : rgba(11, 32, 53, 0.219);
+
+      --cg:rgb(37, 93, 61);
+      --cr:rgb(167, 73, 73);
+      --cb:rgb(0, 63, 131);
+      --cy:rgb(158, 121, 0);
+      --cgr:rgb(44, 44, 44);
     }
     @font-face {
       font-family: icon2;
@@ -20,12 +35,7 @@
       font-family: icon;
       src: url(font/fonts/Glyphter.woff);
     }
-    * {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      outline: 0;
-    }
+
     main {
       
       margin: 0 auto;
@@ -44,7 +54,8 @@
     img {
       vertical-align: top;
       margin: 10px;
-      border-radius: 15px;
+      border: 3px double rgb(129, 129, 129);
+      border-radius: 33%;
       object-fit: cover;
       width: 60px;
       height: 60px;
@@ -73,9 +84,25 @@
       padding: 10px;
       border-radius: 100%;
     }
-    .footer div:hover {
-      
-      background-color: var(--r)
+    .footer div:nth-child(1):hover {
+      color :var(--cg);
+      background-color: var(--g);
+    }
+    .footer div:nth-child(2):hover {
+      color :var(--cr);
+      background-color: var(--r);
+    }
+    .footer div:nth-child(3):hover {
+      color :var(--cb);
+      background-color: var(--b);
+    }
+    .footer div:nth-child(4):hover {
+      color :var(--cy);
+      background-color: var(--y);
+    }
+    .footer div:nth-child(5):hover {
+      color :var(--cgr);
+      background-color: var(--gr);
     }
     aside div {
       width: 100px;
