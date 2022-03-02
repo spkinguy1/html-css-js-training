@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    :root {
+      --g : rgba(115, 149, 129, 0.342);
+      --r : rgba(246, 189, 189, 0.267);
+    }
+    @font-face {
+      font-family: icon2;
+      src: url(font/fonts/2/fonts/Glyphter.woff);
+    }
+    @font-face {
+      font-family: icon;
+      src: url(font/fonts/Glyphter.woff);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+    }
+    main {
+      
+      margin: 0 auto;
+      width: auto;
+      /* border: 1px solid gray; */
+    }
+    article {
+      border: 1px solid rgba(44, 44, 44, 0.267);
+      outline-offset: 0;
+      outline-style: none;
+      min-width: 200px;
+      max-width: 800px;
+      position: relative;
+      margin: -1px auto;
+    }
+    img {
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+      width: 60px;
+      height: 60px;
+    }
+    p.content {
+      margin: 10px 10px;
+      display: inline-block;
+      width: 300px;
+      margin-left: 10px;
+    }
+    footer {
+      display: flex;
+      font-family: icon2;
+      justify-content: center;
+    }
+    .footer{
+      display: flex;
+      justify-content: center;
+    }
+    .footer div{
+      transition: 0.1s;
+      color: rgb(61, 71, 61);
+      margin: 1% 4%;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 100%;
+    }
+    .footer div:hover {
+      
+      background-color: var(--r)
+    }
+    aside div {
+      width: 100px;
+      background-color: aquamarine;
+      height: 100px;
+    }
+  </style>
+
+
+</head>
+<body> 
+
+<div id="wrapper" class="flex">
+  <main>
+    <table class="collabse">
+      <tbody>
+        <tr>
+            <article>
+              <a href="#"><img src="images/download.jpeg" alt="username"></a>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt adipisci perferendis deserunt, assumenda rerum unde, odit eaque facere ullam, fugit obcaecati eum dolore quam similique. Labore, optio delectus. Itaque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias ipsa soluta neque facere numquam debitis tempora quaerat, aspernatur veniam saepe rerum voluptates hic suscipit nemo accusantium illo rem. Deleniti.
+              </p>
+              <footer class="footer">
+                <div title="comments">A</div>
+                <div title="like">B</div>
+                <div title="republish">E</div>
+                <div title="dislike">D</div>
+                <div title="information">J</div>
+              </footer>
+            </article>
+            <article>
+              <a href="#"><img src="images/download2.jpeg" alt="username"></a>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt adipisci perferendis deserunt, assumenda rerum unde, odit eaque facere ullam, fugit obcaecati eum dolore quam similique. Labore, optio delectus. Itaque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias ipsa soluta neque facere numquam debitis tempora quaerat, aspernatur veniam saepe rerum voluptates hic suscipit nemo accusantium illo rem. Deleniti.
+              </p>
+              <footer class="footer">
+                <div title="comments">A</div>
+                <div title="like">B</div>
+                <div title="republish">E</div>
+                <div title="dislike">D</div>
+                <div title="information">J</div>
+              </footer>
+            </article>
+            <article>
+              <a href="#"><img src="images/download2.jpeg" alt="username"></a>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt adipisci perferendis deserunt, assumenda rerum unde, odit eaque facere ullam, fugit obcaecati eum dolore quam similique. Labore, optio delectus. Itaque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias ipsa soluta neque facere numquam debitis tempora quaerat, aspernatur veniam saepe rerum voluptates hic suscipit nemo accusantium illo rem. Deleniti.
+              </p>
+              <footer class="footer">
+                <div title="comments">A</div>
+                <div title="like">B</div>
+                <div title="republish">E</div>
+                <div title="dislike">D</div>
+                <div title="information">J</div>
+              </footer>
+            </article>
+            <article>
+              <a href="#"><img src="images/download2.jpeg" alt="username"></a>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt adipisci perferendis deserunt, assumenda rerum unde, odit eaque facere ullam, fugit obcaecati eum dolore quam similique. Labore, optio delectus. Itaque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias ipsa soluta neque facere numquam debitis tempora quaerat, aspernatur veniam saepe rerum voluptates hic suscipit nemo accusantium illo rem. Deleniti.
+              </p>
+              <footer class="footer">
+                <div title="comments">A</div>
+                <div title="like">B</div>
+                <div title="republish">E</div>
+                <div title="dislike">D</div>
+                <div title="information">J</div>
+              </footer>
+            </article>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <aside>
+    <section>
+      <div></div>
+    </section>
+  </aside>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
