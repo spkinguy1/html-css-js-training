@@ -1,18 +1,27 @@
 //pick up any div within footers
-const divs = document.querySelectorAll('.footer div')
-const dislike = document.querySelector('.footer div:nth-child(4)')
+const divs = document.querySelectorAll(".footer div");
+const like = document.querySelector(".footer div:nth-child(2)");
+const dislike = document.querySelector(".footer div:nth-child(4)");
 
-dislike.onclick(() => {
-    dislike.remove()
-    dislike = document.createElement('div')
-})
+like.addEventListener("click", likeHandller);
 
-
+dislike.addEventListener('click',dislikeHandler)
 
 
 
 
 
-function createArticle({post}){
-
+function dislikeHandler() {
+    if (dislike.textContent == "I")
+    dislike.textContent = "D";
 }
+
+
+function likeHandller() {
+        if (like.textContent == "B")
+        like.textContent = "C";
+}
+
+
+
+function createArticle({ post }) {}
