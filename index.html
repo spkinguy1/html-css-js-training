@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0 " ;>
   <title>Document</title>
 
 
@@ -39,7 +39,8 @@
     main {
       
       margin: 0 auto;
-      width: auto;
+      width: 800;
+      min-width: 400px;
       /* border: 1px solid gray; */
     }
     article {
@@ -57,30 +58,34 @@
       border: 3px double rgb(129, 129, 129);
       border-radius: 33%;
       object-fit: cover;
+      min-width: 80px;
+      min-height: 80px;
       width: 60px;
       height: 60px;
     }
     p.content {
-      margin: 10px 10px;
+      font-size: 30px;
+      margin: 10px 25px;
       display: inline-block;
-      width: 300px;
+      width: 400px;
       margin-left: 10px;
     }
     footer {
       display: flex;
       font-family: icon2;
-      justify-content: center;
+      justify-content: space-between;
     }
     .footer{
       display: flex;
       justify-content: center;
     }
     .footer div{
+      
       transition: 0.1s;
       color: rgb(61, 71, 61);
-      margin: 1% 4%;
+      margin: 1% auto;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 30px;
       padding: 10px;
       border-radius: 100%;
     }
@@ -104,10 +109,16 @@
       color :var(--cgr);
       background-color: var(--gr);
     }
-    aside div {
-      width: 100px;
+    aside{
+      position: fixed;
+      top: 90vh;
+      left: 90vw;
+      border-radius: 40%;
       background-color: aquamarine;
-      height: 100px;
+      max-width: 50px;
+      max-height: 50px;
+      min-width: 50px;
+      min-height: 50px;
     }
   </style>
 
@@ -182,7 +193,6 @@
   </main>
   <aside>
     <section>
-      <div></div>
     </section>
   </aside>
 </div>
